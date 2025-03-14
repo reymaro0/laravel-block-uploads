@@ -1,0 +1,29 @@
+{
+    "name": "reymaro0/laravel-block-uploads",
+    "description": "If your laravel allows you to upload files with .php or .js extension and leave them exposed (in the storage, for example), this package is for you.",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Reymaro0\\LaravelBlockUploads\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matías Reynolds",
+            "email": "matias@spoa.dev"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BlockUploads\\Providers\\BlockUploadsServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    }
+}
